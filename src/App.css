@@ -1,6 +1,12 @@
 .App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.background-image {
   background-image: url("https://via.placeholder.com/1200x600");
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   padding: 20px;
 }
