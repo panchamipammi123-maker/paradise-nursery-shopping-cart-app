@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import AboutUs from "./components/AboutUs";
 import ProductList from "./components/ProductList";
-import CartItem from "./components/CartItem";
 import "./App.css";
 
 function App() {
+  const [showProducts, setShowProducts] = useState(false);
+
+  const handleGetStarted = () => {
+    setShowProducts(true);
+  };
+
   return (
-    <div className="App">
+    <div className="background-image">
       <h1>Paradise Nursery</h1>
       <p>Welcome to Paradise Nursery, your online plant store.</p>
-      <button>Get Started</button>
+
+      {!showProducts && (
+        <button onClick={handleGetStarted}>Get Started</button>
+      )}
+
+      {showProducts && <ProductList />}
     </div>
   );
 }
