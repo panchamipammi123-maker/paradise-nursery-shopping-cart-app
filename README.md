@@ -1,2 +1,4 @@
-# paradise-nursery-shopping-cart-app
-Paradise Nursery Shopping Cart App – React + Redux
+
+# Paradise Nursery Shopping Application
+
+This is the final project for the React and Redux course.
